@@ -1,5 +1,6 @@
 body{
     margin:0;
+    font-family: sans-serif;
 }
 a{
     text-decoration: none;
@@ -10,20 +11,34 @@ a.nav-bar-collapsible{
 nav#nav-bar{
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 5%;
     top:0;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 77); 
     width:100%;
-    padding-left: 100px;
-    padding-right: 1000px;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 3%;
+    z-index: 1;
+    flex-grow: 1;
+    margin: 0;
+    padding-top:3%;
+    padding-bottom: 3%;
+    font-family: metropolis;
+    font-size: larger;
 }
-div.nav-bar-collapsible{
+#nav-bar-collapsible{
     display: flex;
     font-size: large;
     padding-right: 1rem;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+#first-page-button{
+    display: inline;
 }
 #master-div-demos{
-    margin: 0px 50px;
+    margin: 0px 5%;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +48,7 @@ div.nav-bar-collapsible{
     justify-content: center;
 }
 #demo{
-    display: inline-block;
+    display: flex inline-block;
     padding: 20px;
     margin:10px;
 
@@ -41,19 +56,29 @@ div.nav-bar-collapsible{
 #demo img{
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) ;
+    max-width: 120%;
 }
 div.demos{
     margin: 50px;
+}
+#demo img:hover{
+    position: relative;
+    bottom:3px;
 }
 h4{
     text-align: center;
 }
 li{
     display: inline;
-    margin-right: 2rem;
+}
+li a:hover{
+    color: rgb(198, 186, 186);
 }
 ul{
-    margin-right: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 div.upper-text{
     display: flex;
@@ -67,7 +92,8 @@ a#nav-bar-bold-text{
     color:white;
 } 
 div#container-nav-bar-bold-text{
-    margin-top: 1rem;
+    margin: 2% 0;
+    padding-right:15%;
 }
 h1#page1-h1{
     font-size: 2.5rem;
@@ -77,7 +103,7 @@ h1#page1-h1{
 }
 p#page1-p{
     font-size: 1.15rem;
-    color: rgb(104,114,129);
+    color: rgb(255,255,255,0.5);
     line-height: 1.2;
     font-weight: 500;
 }
@@ -102,16 +128,27 @@ a.teal-button{
     font-size: 0.75rem;
     margin-top: 1rem;
     font-weight: 700;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a.teal-button:hover{
+    background-color:  rgb(21, 107, 6);
+    position: relative;
+    bottom: 3px;
 }
 div#page1-below-nav-bar{
     display: flex;
-    padding: 0 48px;
-    margin: 0 80.5px;
+    padding: 0 7%;
+    margin: 0 8%;
 }
 #page1-documentation-link{
     color: white;
-    margin: 1rem;
+    margin: 3%;
+    display: relative;
+    left:10%;
+}
+#page1-documentation-link:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.455);
+
 }
 h3{
     color: rgb(104,114,129) ;
@@ -170,6 +207,7 @@ div#table a{
 }
 #page1-image{
     width: 500px;
+    max-width: 130%;
 }
 div#sep{
     padding: 1px;
@@ -178,13 +216,14 @@ div#sep{
 }
 #upper-text5{
     text-align: center;
-    padding: 10px 250px;
-    margin: 10px 100px;
+    padding: 10px 15%;
+    margin: 10px 7%;
 }
 #lower-content{
     font-size: large;
     padding:50px;
     text-align: center;
+    flex-wrap: wrap;
 }
 #heavy-text5{
     font-size: 100px;
@@ -198,7 +237,7 @@ div#sep{
     text-align: center;
     font-size: larger;
 }
-#button-page5{
+div#button-page5{
     display: flex;
     justify-content: center;
 }
@@ -213,16 +252,104 @@ div#sep{
 #Upper-section{
     display: flex;
     justify-content: space-around;
+    gap:2%;
+    flex-wrap: wrap;
+    color: rgb(107, 104, 104);
+    font-weight: 700;
+}
+.last-page a:hover{
+    text-decoration: underline;
 
+}
+.last-page a{
+    color: rgb(111, 105, 105);
+    font-weight: 400;
+    display: inline-block;
+    width:fit-content;
 }
 #upper-text-and-social-media-images, #TECHNICAL,#PRODUCT,#INCLUDES,#LEGAL{
     display: flex;
     flex-direction: column;
+    gap:10px;
 }
 .sixth-page{
-    padding: 50px;
+    padding: 5%;
 }
+/*styling the copyright and stufff*/
 #abc{
     display: flex;
     justify-content: space-between;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+
+#icon-only-when-collapsed{
+    display: none;
+}
+#column1,column2,column3{
+    min-width:30%;
+}
+button#button-page5:hover{
+    background-color:rgb(7, 21, 44) ;
+    position: relative;
+    bottom:3px;
+}
+
+
+/* MEDIA QUERIES*/
+
+/*tablets*/
+@media screen and (max-width: 880px){
+    #page1-image{
+        display: none;
+    }
+    #icon-only-when-collapsed{
+     display: block;
+    }
+    div#nav-bar-collapsible{
+        display: none;
+    }
+    nav{
+        display: flex;
+        background-color: darkblue;
+        justify-content: space-between !important;
+    }
+    #upper-text5{
+        margin: 0;
+        padding: 5%;
+    }
+    #demo img{
+        position: relative;
+        right:10%;
+    }
+    .last-page{
+        margin:10px;
+        min-width: 80%;
+        }
+    div.fifth-page{
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    div#page1-below-nav-bar{
+        margin:0;
+        padding:0;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .upper-text{
+        margin:0;
+        padding: 5%;
+    }
+    #just-below{
+        font-size: larger;
+    }
+    #third-line{
+        font-size: medium;
+    }
+    header{
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
 }

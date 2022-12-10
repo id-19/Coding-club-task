@@ -15,7 +15,7 @@
                     SB UI Kit Pro
                 </a>
             </div>
-            <div class="nav-bar-collapsible">
+            <div id="nav-bar-collapsible">
                 <ul >
                     <li>
                         <a class="nav-bar-collapsible" href=""> Home</a>
@@ -30,7 +30,13 @@
                         <a class="nav-bar-collapsible" href=""> Documentation></a>
                     </li>
                 </ul>
-                <a class="teal-button" href="" >BUY NOW --><img src="right-arrow.jpeg" alt="" id="right-arrow1"> </a>
+                <a class="teal-button" href="" >BUY NOW 
+                    <!-- <img src="right-arrow.jpeg" alt="" id="right-arrow1">--> </a> 
+            </div>
+            <div id="icon-only-when-collapsed">
+                <div>
+
+                </div>
             </div>
         </nav>
             <header id="page-text-container">
@@ -38,7 +44,7 @@
                     <div id="text-pg1">
                         <h1 id="page1-h1">Build your next project faster with SB UI Kit Pro</h1>
                         <p id="page1-p">Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces, created by the development team at Start Bootstrap</p>
-                        <a class= "teal-button" href="">VIEW DEMO</a>
+                        <a class= "teal-button" id="first-page-button" href="">VIEW DEMO</a>
                         <a id="page1-documentation-link" href=""> Documentation</a>
                     </div>
                     <div id="page1-image">
@@ -271,9 +277,9 @@
                 </div>
             </div>
             <div id="button-page5">
-                <button>
+                <button id="button-page5">
                     VIEW DOCUMENTATION
-                </div>
+                </button>
             </div>
 
         </div>
@@ -287,7 +293,7 @@
                <p>Build better websites</p>
                <div>Social media images</div>
             </div>
-            <div id="PRODUCT">
+            <div id="PRODUCT" class="last-page">
                 PRODUCT
                 <a href="">Landing</a>
                 <a href="">Pages</a>
@@ -295,7 +301,7 @@
                 <a href="">Documentation</a>
                 <a href="">Changelog</a>
             </div>
-            <div id="TECHNICAL">
+            <div id="TECHNICAL" class="last-page">
                 TECHNICAL
                 <a href="">Documentation</a>
                 <a href="">Changelog</a>
@@ -303,7 +309,7 @@
                 <a href="">UI Kit</a>
 
             </div>
-            <div id="INCLUDES">
+            <div id="INCLUDES" class="last-page">
                 INCLUDES
                 <a href="">Utilities</a>
                 <a href="">Components</a>
@@ -313,7 +319,7 @@
                 <a href="">Affiliates</a>
                 <a href="">Updates</a>
             </div>
-            <div id="LEGAL">
+            <div id="LEGAL" class="last-page">
                 LEGAL
                 <a href="">Privacy Policy</a>
                 <a href="">Terms and Conditions</a>
@@ -333,6 +339,9 @@
             </div>
         </div>
     </footer>
+    <div>
+        
+    </div>
 </main>
 </body>
 </html>
